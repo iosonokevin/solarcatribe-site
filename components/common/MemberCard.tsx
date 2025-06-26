@@ -1,11 +1,11 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 
 interface MemberCardProps {
   name: string;
-  imageSrc: string;
+  imageSrc: StaticImageData;
   onClick: () => void;
 }
 
@@ -21,6 +21,7 @@ export default function MemberCard({ name, imageSrc, onClick }: MemberCardProps)
           width={240}
           height={240}
           className="object-cover w-full h-full"
+          placeholder="blur"
         />
       </div>
       <p className="mt-4 text-lg font-medium text-black transition-colors duration-300 hover:text-gray-700">

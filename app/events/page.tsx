@@ -10,7 +10,7 @@ export default function Events() {
   const { language } = useLanguage();
 
   return (
-    <div className="bg-black text-white font-[family-name:var(--font-geist-sans)] relative">      
+    <div className="bg-transparent text-white font-[family-name:var(--font-geist-sans)] relative">      
       <Hero 
         title={
             language === 'ITA' 

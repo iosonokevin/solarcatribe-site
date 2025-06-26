@@ -9,25 +9,30 @@ import ImageBanner from '@/components/common/ImageBanner';
 import ImageCarousel from '@/components/common/ImageCarousel';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
+import logoSolarca from '@/public/images/logo_solarca.png';
+import tepeeInipi from '@/public/images/tepee_inipi.jpg';
+import bandieraSolarcaSantaSara from '@/public/images/bandiera_solarca_santa_sara.jpg';
+import sweatLodgeInWinter from '@/public/images/sweat_lodge_in_winter.jpg';
+import solarcaColors from '@/public/images/solarca_colors.jpg';
 
 export default function Home() {
   const { language } = useLanguage();
 
   const images = [
-    { src: '/tepee_inipi.jpg', alt: 'tepee inipi' },
-    { src: '/bandiera_solarca_santa_sara.jpg', alt: 'bandiera solarca santa sara' },
-    { src: '/sweat_lodge_in_winter.jpg', alt: 'sweat lodge in winter' },
-    { src: '/solarca_colors.jpg', alt: 'solarca colors' },
+    { src: tepeeInipi, alt: 'tepee inipi' },
+    { src: bandieraSolarcaSantaSara, alt: 'bandiera solarca santa sara' },
+    { src: sweatLodgeInWinter, alt: 'sweat lodge in winter' },
+    { src: solarcaColors, alt: 'solarca colors' },
   ];
 
   return (
-    <div className="bg-black text-white font-[family-name:var(--font-geist-sans)] relative">       
+    <div className="bg-transparent text-white font-[family-name:var(--font-geist-sans)] relative">       
       <Hero title="Solarca Tribe" videoSrc="/santa_sara_tribe_canto_2.mp4" />
 
       <EventList />
 
       <ImageTextSection
-        imageSrc="/logo_solarca.png"
+        imageSrc={logoSolarca}
         titleITA="Il Sentiero Rosso"
         titleENG="The Red Path"
         paragraphsITA={["Un viaggio del cuore e dello spirito, abbracciando la sacra connessione tra tutti gli esseri."]}

@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import MemberCard from './MemberCard';
 import MemberOverlay from './MemberOverlay';
 import { useLanguage } from '@/components/layout/LanguageProvider';
+import { StaticImageData } from 'next/image';
 
 interface Member {
   name: string;
-  imageSrc: string;
+  imageSrc: StaticImageData;
   bio: string;
 }
 

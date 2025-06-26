@@ -1,7 +1,14 @@
+import eventoMartinaMamani from '@/public/images/evento_martina_mamani.jpg';
+import eventoVoiceOfFreedom from '@/public/images/evento_voice_of_freedom.png';
+import tribeAroundFire from '@/public/images/tribe_around_fire.jpg';
+import eventoCerimoniaHikuri from '@/public/images/evento_cerimonia_hikuri.jpg';
+import eventoParoleNative from '@/public/images/evento_parole_native.png';
+import { StaticImageData } from 'next/image';
+
 export interface EventData {
   slug: string;
   title: string;
-  image: string;
+  image: StaticImageData;
   date: string;
   location1?: string;
   location2?: string;
@@ -17,7 +24,7 @@ export const allEventsITA: EventData[] = [
   {
     slug: 'martina-mamani',
     title: 'Martina Mamani',
-    image: '/evento_martina_mamani.jpg',
+    image: eventoMartinaMamani,
     date: '31 maggio 2025',
     location1: 'Val Chiusella (TO)',
     members: ['Luca Del Fuego Confortini'],
@@ -28,7 +35,7 @@ export const allEventsITA: EventData[] = [
     {
     slug: 'voice-of-freedom',
     title: 'Voice Of Freedom',
-    image: '/evento_voice_of_freedom.png',
+    image: eventoVoiceOfFreedom,
     date: '12 luglio 2025 11:20',
     location1: 'Festival Nazionale dello Sciamanesimo',
     location2: 'Bosco Eremo Locatelli - Corbetta (MI)',
@@ -41,7 +48,7 @@ export const allEventsITA: EventData[] = [
   {
     slug: 'capanna-sudatoria-12-luglio',
     title: 'INIPI Capanna Sudatoria Lakota',
-    image: '/tribe_around_fire.jpg',
+    image: tribeAroundFire,
     date: '12 luglio 2025 15:00 - 19:00',
     location1: 'Festival Nazionale dello Sciamanesimo',
     location2: 'Bosco Eremo Locatelli - Corbetta (MI)',
@@ -54,7 +61,7 @@ export const allEventsITA: EventData[] = [
   {
     slug: 'capanna-sudatoria-13-luglio',
     title: 'INIPI Capanna Sudatoria Lakota',
-    image: '/tribe_around_fire.jpg',
+    image: tribeAroundFire,
     date: '13 luglio 2025 10:00 - 14:00',
     location1: 'Festival Nazionale dello Sciamanesimo',
     location2: 'Bosco Eremo Locatelli - Corbetta (MI)',
@@ -67,7 +74,7 @@ export const allEventsITA: EventData[] = [
   {
     slug: 'cerimonia-hikuri',
     title: 'Cerimonia Hikuri',
-    image: '/evento_cerimonia_hikuri.jpg',
+    image: eventoCerimoniaHikuri,
     date: '21-22 settembre 2025',
     location1: 'Val Chiusella (TO)',
     members: ['Luca Del Fuego Confortini'],
@@ -80,7 +87,7 @@ export const allEventsITA: EventData[] = [
   {
     slug: 'parole-native',
     title: 'Parole Native',
-    image: '/evento_parole_native.png',
+    image: eventoParoleNative,
     date: '4-5 ottobre 2025',
     members: ['Luca Del Fuego Confortini'],
     description1: `Con questo workshop hai l’opportunità di fare un salto evolutivo grazie a **PAROLE NATIVE**, un’esperienza unica che unisce l’antica saggezza dei Nativi Americani con la potenza della PNL (Programmazione Neuro-Linguistica).`,

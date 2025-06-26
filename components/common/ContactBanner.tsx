@@ -4,6 +4,8 @@ import Image from "next/image";
 import ButtonLink from './PrimaryButton';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
+import logoSolarca from '@/public/images/logo_solarca.png';
+
 export default function ContactBanner() {
   const { language } = useLanguage();
 
@@ -11,7 +13,7 @@ export default function ContactBanner() {
     <section className="w-full bg-white text-black py-20 px-6 sm:px-12 text-center">
       <div className="flex justify-center">
         <Image
-          src="/logo_solarca.png"
+          src={logoSolarca}
           alt="Logo Solarca"
           width={300}
           height={300}

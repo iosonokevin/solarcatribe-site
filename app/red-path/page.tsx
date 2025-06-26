@@ -7,6 +7,9 @@ import ImageBanner from '@/components/common/ImageBanner';
 import ImageTextSection from '@/components/common/ImageTextSection';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
+import tepeeInipi from '@/public/images/tepee_inipi.jpg';
+import sweatLodgeInWinter from '@/public/images/sweat_lodge_in_winter.jpg';
+
 export default function RedPath() {
   const { language } = useLanguage();
 
@@ -23,7 +26,7 @@ export default function RedPath() {
       />
 
       <ImageTextSection
-        imageSrc="/sweat_lodge_in_winter.jpg"
+        imageSrc={sweatLodgeInWinter}
         titleITA="La Strada Rossa"
         titleENG="The Red Road"
         paragraphsITA={[
@@ -50,7 +53,7 @@ export default function RedPath() {
       />
 
       <ImageTextSection
-        imageSrc="/tepee_inipi.jpg"
+        imageSrc={tepeeInipi}
         titleITA="La Via del Cuore"
         titleENG="The Way of the Heart"
         paragraphsITA={[

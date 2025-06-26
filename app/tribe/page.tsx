@@ -7,6 +7,12 @@ import ImageBanner from '@/components/common/ImageBanner';
 import ImageTextSection from '@/components/common/ImageTextSection';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
+import heroTribe from '@/public/images/hero_tribe.jpg';
+import solarcaColors from '@/public/images/solarca_colors.jpg';
+import bandieraSolarcaSantaSara from '@/public/images/bandiera_solarca_santa_sara.jpg';
+import fotoLuca from '@/public/images/foto_luca.jpeg'
+import santaSaraLucaJeremy from '@/public/images/santa_sara_luca_jeremy.jpg'
+
 export default function Tribe() {
   const { language } = useLanguage();
 
@@ -19,11 +25,11 @@ export default function Tribe() {
             : "Mother Earth's breath becomes a heartbeat in every heart"
         } 
         height="90vh" 
-        imageSrc="/hero_tribe.jpg" 
+        imageSrc={heroTribe} 
       />
 
       <ImageTextSection
-        imageSrc="/solarca_colors.jpg"
+        imageSrc={solarcaColors} 
         titleITA="Solarca"
         titleENG="Solarca"
         paragraphsITA={[
@@ -50,7 +56,7 @@ export default function Tribe() {
       />
 
       <ImageTextSection
-        imageSrc="/bandiera_solarca_santa_sara.jpg"
+        imageSrc={bandieraSolarcaSantaSara}
         titleITA="La Tribù"
         titleENG="The Tribe"
         paragraphsITA={[
@@ -77,7 +83,7 @@ export default function Tribe() {
       />
 
       <ImageTextSection
-        imageSrc="/foto_luca.jpeg"
+        imageSrc={fotoLuca}
         titleITA="Luca Del Fuego Confortini"
         titleENG="Luca Del Fuego Confortini"
         paragraphsITA={[
@@ -94,7 +100,7 @@ export default function Tribe() {
       />
 
       <ImageTextSection
-        imageSrc="/santa_sara_luca_jeremy.jpg"
+        imageSrc={santaSaraLucaJeremy}
         titleITA=""
         titleENG=""
         paragraphsITA={[

@@ -8,7 +8,6 @@ import { useLanguage } from '@/components/layout/LanguageProvider';
 
 export default function EventList() {
   const { language } = useLanguage();
-
   const [showPastEvents, setShowPastEvents] = useState(false);
 
   const allEvents = language === 'ITA' ? allEventsITA : allEventsENG;
@@ -16,7 +15,9 @@ export default function EventList() {
   const activeEvents = allEvents.filter(event => event.active);
   const pastEvents = allEvents.filter(event => !event.active);
 
-  const eventsToShow = showPastEvents ? [...activeEvents, ...pastEvents] : activeEvents;
+  const eventsToShow = showPastEvents
+    ? [...activeEvents, ...pastEvents]
+    : activeEvents;
 
   const texts = {
     ITA: {
@@ -35,11 +36,13 @@ export default function EventList() {
 
   return (
     <section className="bg-white text-black py-20 px-6 sm:px-12">
-      <h2 className="text-4xl font-bold text-center mb-12">{texts[language].title}</h2>
+      <h2 className="text-4xl font-bold text-center mb-12">
+        {texts[language].title}
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {eventsToShow.length > 0 ? (
-          eventsToShow.map(event => (
+          eventsToShow.map((event, index) => (
             <EventCard
               key={event.slug}
               slug={event.slug}
@@ -48,10 +51,13 @@ export default function EventList() {
               location1={event.location1}
               location2={event.location2}
               image={event.image}
+              priority={index < 2}
             />
           ))
         ) : (
-          <p className="col-span-full text-center text-gray-500">{texts[language].noEvents}</p>
+          <p className="col-span-full text-center text-gray-500">
+            {texts[language].noEvents}
+          </p>
         )}
       </div>
 
@@ -61,7 +67,9 @@ export default function EventList() {
           className="px-6 py-3 border border-black rounded-full hover:bg-black hover:text-white transition cursor-pointer"
           aria-expanded={showPastEvents}
         >
-          {showPastEvents ? texts[language].hidePast : texts[language].showPast}
+          {showPastEvents
+            ? texts[language].hidePast
+            : texts[language].showPast}
         </button>
       </div>
     </section>

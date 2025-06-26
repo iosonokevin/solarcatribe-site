@@ -2,16 +2,16 @@
 
 import Header from './Header';
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import SidebarMenu from '../layout/SidebarMenu';
 
 interface HeroSectionProps {
   title: string;
   videoSrc?: string;
-  imageSrc?: string;
+  imageSrc?: string | StaticImageData;
   overlayOpacity?: number;
   height?: string;
-  showLanguageSwitch?: boolean
+  showLanguageSwitch?: boolean;
 }
 
 export default function HeroSection({
@@ -20,7 +20,7 @@ export default function HeroSection({
   imageSrc,
   overlayOpacity = 0.3,
   height = '100vh',
-  showLanguageSwitch = true
+  showLanguageSwitch = true,
 }: HeroSectionProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -32,8 +32,9 @@ export default function HeroSection({
         showLanguageSwitch={showLanguageSwitch}
       />
       <SidebarMenu isOpen={isMenuOpen} toggleMenu={() => setIsMenuOpen(false)} />
+
       <section
-        className="relative flex items-center justify-center px-8 sm:px-20 text-center overflow-hidden bg-black"
+        className="relative flex items-center justify-center px-8 sm:px-20 text-center overflow-hidden bg-transparent"
         style={{ height }}
       >
         {videoSrc ? (
@@ -48,15 +49,17 @@ export default function HeroSection({
             <source src={videoSrc} type="video/mp4" />
           </video>
         ) : imageSrc ? (
-          <Image
-            src={imageSrc}
-            alt="Hero background"
-            fill
-            className="object-cover z-0"
-            priority
-          />
+          <div className="absolute top-0 left-0 w-full h-full z-0 bg-transparent">
+            <Image
+              src={imageSrc}
+              alt="Hero background"
+              fill
+              className="object-cover"
+              placeholder="blur"
+              priority
+            />
+          </div>
         ) : null}
-
         <div
           className="absolute inset-0 bg-black z-10"
           style={{ opacity: overlayOpacity }}

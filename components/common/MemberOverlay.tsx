@@ -2,16 +2,21 @@
 
 import React from 'react';
 import CloseButton from './CloseButton';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface MemberOverlayProps {
   name: string;
   bio: string;
-  imageSrc: string;
+  imageSrc: string | StaticImageData;
   onClose: () => void;
 }
 
 export default function MemberOverlay({ name, bio, imageSrc, onClose }: MemberOverlayProps) {
+  // Se imageSrc è StaticImageData, usa blurDataURL da lì, altrimenti undefined
+  const blurDataURL = typeof imageSrc === 'object' && 'blurDataURL' in imageSrc
+    ? imageSrc.blurDataURL
+    : undefined;
+
   return (
     <div
       className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center px-4"
@@ -32,6 +37,9 @@ export default function MemberOverlay({ name, bio, imageSrc, onClose }: MemberOv
               alt={name}
               fill
               style={{ objectFit: 'cover' }}
+              priority
+              placeholder={blurDataURL ? 'blur' : 'empty'}
+              blurDataURL={blurDataURL}
             />
           </div>
           <h2 className="text-2xl font-bold mb-2">{name}</h2>
@@ -41,4 +49,3 @@ export default function MemberOverlay({ name, bio, imageSrc, onClose }: MemberOv
     </div>
   );
 }
-
