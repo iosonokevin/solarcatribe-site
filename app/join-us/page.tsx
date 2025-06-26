@@ -18,7 +18,7 @@ export default function JoinUs() {
               : "Community and Connection"
           } 
         height="90vh" 
-        imageSrc="/hero_join_us.jpg" 
+        imageSrc="/hero_join_us.webp" 
       />
       <ContactSection />
       <ContactBanner />

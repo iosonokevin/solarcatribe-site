@@ -4,7 +4,7 @@ import Image from "next/image";
 import ButtonLink from './PrimaryButton';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
-import logoSolarca from '@/public/images/logo_solarca.png';
+import logoSolarca from '@/public/images/logo_solarca.webp';
 
 export default function ContactBanner() {
   const { language } = useLanguage();

@@ -9,11 +9,11 @@ import ImageBanner from '@/components/common/ImageBanner';
 import ImageCarousel from '@/components/common/ImageCarousel';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
-import logoSolarca from '@/public/images/logo_solarca.png';
-import tepeeInipi from '@/public/images/tepee_inipi.jpg';
-import bandieraSolarcaSantaSara from '@/public/images/bandiera_solarca_santa_sara.jpg';
-import sweatLodgeInWinter from '@/public/images/sweat_lodge_in_winter.jpg';
-import solarcaColors from '@/public/images/solarca_colors.jpg';
+import logoSolarca from '@/public/images/logo_solarca.webp';
+import tepeeInipi from '@/public/images/tepee_inipi.webp';
+import bandieraSolarcaSantaSara from '@/public/images/bandiera_solarca_santa_sara.webp';
+import sweatLodgeInWinter from '@/public/images/sweat_lodge_in_winter.webp';
+import solarcaColors from '@/public/images/solarca_colors.webp';
 
 export default function Home() {
   const { language } = useLanguage();

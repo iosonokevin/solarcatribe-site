@@ -6,6 +6,8 @@ import EventList from '@/components/common/EventList';
 import Hero from '@/components/common/HeroSection';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
+import heroEventi from '@/public/images/hero_eventi.webp';
+
 export default function Events() {
   const { language } = useLanguage();
 
@@ -18,7 +20,7 @@ export default function Events() {
               : "At every beat, Mother Earth sings in us"
           } 
         height="90vh" 
-        imageSrc="/hero_eventi.jpg" 
+        imageSrc={heroEventi} 
       />
       <EventList />
       <ContactBanner />

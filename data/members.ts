@@ -1,5 +1,5 @@
-import fotoLuca from '@/public/images/foto_luca.jpeg';
-import fotoSamuele from '@/public/images/foto_samuele.jpg';
+import fotoLuca from '@/public/images/foto_luca.webp';
+import fotoSamuele from '@/public/images/foto_samuele.webp';
 import { StaticImageData } from 'next/image';
 
 export interface Member {

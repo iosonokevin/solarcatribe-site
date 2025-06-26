@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       <Hero 
         title="Privacy Policy"
         height="90vh" 
-        imageSrc="/hero_tribe.jpg" 
+        imageSrc="/hero_tribe.webp" 
       />
 
       <section className="bg-white text-black w-full py-20 px-6 sm:px-12">

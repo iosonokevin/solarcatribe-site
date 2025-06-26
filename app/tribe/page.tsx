@@ -7,11 +7,11 @@ import ImageBanner from '@/components/common/ImageBanner';
 import ImageTextSection from '@/components/common/ImageTextSection';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
-import heroTribe from '@/public/images/hero_tribe.jpg';
-import solarcaColors from '@/public/images/solarca_colors.jpg';
-import bandieraSolarcaSantaSara from '@/public/images/bandiera_solarca_santa_sara.jpg';
-import fotoLuca from '@/public/images/foto_luca.jpeg'
-import santaSaraLucaJeremy from '@/public/images/santa_sara_luca_jeremy.jpg'
+import heroTribe from '@/public/images/hero_tribe.webp';
+import solarcaColors from '@/public/images/solarca_colors.webp';
+import bandieraSolarcaSantaSara from '@/public/images/bandiera_solarca_santa_sara.webp';
+import fotoLuca from '@/public/images/foto_luca.webp'
+import santaSaraLucaJeremy from '@/public/images/santa_sara_luca_jeremy.webp'
 
 export default function Tribe() {
   const { language } = useLanguage();

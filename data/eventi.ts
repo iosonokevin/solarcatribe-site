@@ -1,8 +1,8 @@
-import eventoMartinaMamani from '@/public/images/evento_martina_mamani.jpg';
-import eventoVoiceOfFreedom from '@/public/images/evento_voice_of_freedom.png';
-import tribeAroundFire from '@/public/images/tribe_around_fire.jpg';
-import eventoCerimoniaHikuri from '@/public/images/evento_cerimonia_hikuri.jpg';
-import eventoParoleNative from '@/public/images/evento_parole_native.png';
+import eventoMartinaMamani from '@/public/images/evento_martina_mamani.webp';
+import eventoVoiceOfFreedom from '@/public/images/evento_voice_of_freedom.webp';
+import tribeAroundFire from '@/public/images/tribe_around_fire.webp';
+import eventoCerimoniaHikuri from '@/public/images/evento_cerimonia_hikuri.webp';
+import eventoParoleNative from '@/public/images/evento_parole_native.webp';
 import { StaticImageData } from 'next/image';
 
 export interface EventData {

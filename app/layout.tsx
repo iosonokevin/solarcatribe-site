@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Solarca Tribe",
     images: [
       {
-        url: "https://www.solarcatribe.com/logo_solarca.png",
+        url: "https://www.solarcatribe.com/logo_solarca.webp",
         width: 1200,
         height: 630,
         alt: "Logo solarca tribe",

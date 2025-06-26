@@ -55,7 +55,6 @@ export default function HeroSection({
               alt="Hero background"
               fill
               className="object-cover"
-              placeholder="blur"
               priority
             />
           </div>

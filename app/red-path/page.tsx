@@ -7,8 +7,9 @@ import ImageBanner from '@/components/common/ImageBanner';
 import ImageTextSection from '@/components/common/ImageTextSection';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
-import tepeeInipi from '@/public/images/tepee_inipi.jpg';
-import sweatLodgeInWinter from '@/public/images/sweat_lodge_in_winter.jpg';
+import tepeeInipi from '@/public/images/tepee_inipi.webp';
+import cerchioDiCanti from '@/public/images/cerchio_di_canti.webp';
+import sweatLodgeInWinter from '@/public/images/sweat_lodge_in_winter.webp';
 
 export default function RedPath() {
   const { language } = useLanguage();
@@ -22,7 +23,7 @@ export default function RedPath() {
             : "We learn to flow, adapt, and embrace the journey"
         } 
         height="90vh"
-        imageSrc="/cerchio_di_canti.JPG"
+        imageSrc={cerchioDiCanti}
       />
 
       <ImageTextSection
