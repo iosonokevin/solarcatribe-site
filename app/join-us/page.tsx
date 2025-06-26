@@ -6,6 +6,8 @@ import ContactSection from '@/components/common/ContactSection';
 import ContactBanner from '@/components/common/ContactBanner';
 import { useLanguage } from '@/components/layout/LanguageProvider';
 
+import heroJoinUs from '@/public/images//hero_join_us.webp';
+
 export default function JoinUs() {
   const { language } = useLanguage();
 
@@ -18,7 +20,7 @@ export default function JoinUs() {
               : "Community and Connection"
           } 
         height="90vh" 
-        imageSrc="/hero_join_us.webp" 
+        imageSrc={heroJoinUs} 
       />
       <ContactSection />
       <ContactBanner />
