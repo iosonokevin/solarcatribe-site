@@ -11,13 +11,9 @@ import { MapPin, Calendar } from 'lucide-react';
 import ButtonLink from '@/components/common/PrimaryButton';
 import ReactMarkdown from 'react-markdown';
 
-interface Params {
-  lang: 'ITA' | 'ENG';
-  slug: string;
-}
-
-export default function EventPage({ params }: { params: Params }) {
-  const { lang, slug } = params;
+export default function EventPage({ params }: { params: Record<string, string> }) {
+  const { lang, slug } = params as { lang: 'ITA' | 'ENG'; slug: string };
+  
   const events = lang === 'ITA' ? allEventsITA : allEventsENG;
   const event = events.find(e => e.slug === slug);
 
