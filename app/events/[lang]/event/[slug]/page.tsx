@@ -11,15 +11,31 @@ import { MapPin, Calendar } from 'lucide-react';
 import ButtonLink from '@/components/common/PrimaryButton';
 import ReactMarkdown from 'react-markdown';
 
-export default function EventPage({ params }: { params: Record<string, string> }) {
-  const { lang, slug } = params as { lang: 'ITA' | 'ENG'; slug: string };
-  
-  const events = lang === 'ITA' ? allEventsITA : allEventsENG;
+type Params = { 
+  lang: 'ITA' | 'ENG'; 
+  slug: string;
+};
+
+function getEventsByLang(lang: 'ITA' | 'ENG') {
+  return lang === 'ITA' ? allEventsITA : allEventsENG;
+}
+
+function getMembersByLang(lang: 'ITA' | 'ENG') {
+  return lang === 'ITA' ? membersITA : membersENG;
+}
+
+// (Opzionale) puoi rimuoverlo se non usi static export
+// export function generateStaticParams() { ... }
+
+export default async function EventPage({ params }: { params: Promise<Params> }) {
+  const { lang, slug } = await params;
+
+  const events = getEventsByLang(lang);
   const event = events.find(e => e.slug === slug);
 
   if (!event) return notFound();
 
-  const members = lang === 'ITA' ? membersITA : membersENG;
+  const members = getMembersByLang(lang);
   const eventMembers = members.filter(m => event.members.includes(m.name));
 
   const registerText = lang === 'ITA' ? 'ISCRIVITI QUI' : 'REGISTER HERE';
@@ -50,20 +66,13 @@ export default function EventPage({ params }: { params: Record<string, string> }
       <section className="bg-white text-black max-w-6xl mx-auto px-6 py-16 sm:px-12 flex flex-col sm:flex-row justify-between items-center gap-6">
         <div className="sm:w-2/3">
           <h2 className="text-3xl font-bold mb-4">{event.title}</h2>
-          {event.description1 && (
-            <div className="mb-8">
-              <ReactMarkdown>{event.description1}</ReactMarkdown>
-            </div>
-          )}
-          {event.description2 && (
-            <div className="mb-8">
-              <ReactMarkdown>{event.description2}</ReactMarkdown>
-            </div>
-          )}
-          {event.description3 && (
-            <div className="mb-8">
-              <ReactMarkdown>{event.description3}</ReactMarkdown>
-            </div>
+          {[event.description1, event.description2, event.description3].map(
+            (desc, i) =>
+              desc && (
+                <div className="mb-8" key={i}>
+                  <ReactMarkdown>{desc}</ReactMarkdown>
+                </div>
+              )
           )}
         </div>
 
