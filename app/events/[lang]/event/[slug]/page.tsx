@@ -11,33 +11,26 @@ import { MapPin, Calendar } from 'lucide-react';
 import ButtonLink from '@/components/common/PrimaryButton';
 import ReactMarkdown from 'react-markdown';
 
-function getEventsByLang(lang: 'ITA' | 'ENG') {
-  return lang === 'ITA' ? allEventsITA : allEventsENG;
+interface Params {
+  lang: 'ITA' | 'ENG';
+  slug: string;
 }
 
-function getMembersByLang(lang: 'ITA' | 'ENG') {
-  return lang === 'ITA' ? membersITA : membersENG;
-}
-
-export default function EventPage({
-    params,
-  }: {
-    params: { lang: 'ITA' | 'ENG'; slug: string };
-  }) {
+export default function EventPage({ params }: { params: Params }) {
   const { lang, slug } = params;
-  const events = getEventsByLang(lang);
+  const events = lang === 'ITA' ? allEventsITA : allEventsENG;
   const event = events.find(e => e.slug === slug);
 
   if (!event) return notFound();
 
-  const members = getMembersByLang(lang);
+  const members = lang === 'ITA' ? membersITA : membersENG;
   const eventMembers = members.filter(m => event.members.includes(m.name));
 
   const registerText = lang === 'ITA' ? 'ISCRIVITI QUI' : 'REGISTER HERE';
 
   return (
     <div className="bg-white text-black">
-      <Hero title={event.title} height="90vh" imageSrc={event.image} showLanguageSwitch={false}/>
+      <Hero title={event.title} height="90vh" imageSrc={event.image} showLanguageSwitch={false} />
 
       <section className="bg-[#A4012F] text-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-12 py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center text-lg font-medium">
