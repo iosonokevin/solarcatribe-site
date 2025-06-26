@@ -35,7 +35,7 @@ export default function ImageTextSection({
   const { language } = useLanguage();
 
   return (
-    <section className="bg-white py-20 px-6 sm:px-12">
+    <section className="bg-white py-10 px-6 sm:px-12">
       <div
         className={`max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 ${
           reverse ? 'md:flex-row-reverse' : ''

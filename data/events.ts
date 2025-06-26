@@ -89,7 +89,7 @@ export const allEventsENG: EventData[] = [
     title: 'Native Words',
     image: eventoParoleNative,
     date: '4-5 October 2025',
-    members: ['Luca Del Fuego Confortini'],
+    members: ['Luca Del Fuego Confortini', 'Giovanni Letizia'],
     description1: `With this workshop, you have the opportunity to take an evolutionary leap thanks to **NATIVE WORDS**, a unique experience that combines the ancient wisdom of Native Americans with the power of NLP (Neuro-Linguistic Programming).`,
     description2: `- Discover the power of millennia-old traditions.\n- Reprogram your mind for evolution and success.\n- Activate your inner resources and human potential.\n- Experience a deep sense of connection and awareness.`,
     active: true,

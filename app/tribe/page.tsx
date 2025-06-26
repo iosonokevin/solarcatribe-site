@@ -10,7 +10,7 @@ import { useLanguage } from '@/components/layout/LanguageProvider';
 import heroTribe from '@/public/images/hero_tribe.webp';
 import solarcaColors from '@/public/images/solarca_colors.webp';
 import bandieraSolarcaSantaSara from '@/public/images/bandiera_solarca_santa_sara.webp';
-import fotoLuca from '@/public/images/foto_luca.webp'
+import fotoLuca from '@/public/images/foto_luca_confortini.webp'
 import santaSaraLucaJeremy from '@/public/images/santa_sara_luca_jeremy.webp'
 
 export default function Tribe() {

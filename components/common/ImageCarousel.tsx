@@ -69,7 +69,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
       {/* Fullscreen viewer */}
       {fullscreenImage && (
         <div
-          className="fixed inset-0 z-50 bg-transparent/80 flex items-center justify-center"
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"
           onClick={() => setFullscreenImage(null)}
         >
           <Image

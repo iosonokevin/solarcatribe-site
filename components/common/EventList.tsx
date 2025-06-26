@@ -35,7 +35,7 @@ export default function EventList() {
   };
 
   return (
-    <section className="bg-white text-black py-20 px-6 sm:px-12">
+    <section className="bg-white text-black py-10 px-6 sm:px-12">
       <h2 className="text-4xl font-bold text-center mb-12">
         {texts[language].title}
       </h2>
