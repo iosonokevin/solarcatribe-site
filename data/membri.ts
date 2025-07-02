@@ -1,6 +1,7 @@
 import fotoLucaConfortini from '@/public/images/foto_luca_confortini.webp';
 import fotoSamueleZarantonello from '@/public/images/foto_samuele_zarantonello.webp';
 import fotoGiovanniLetizia from '@/public/images/foto_giovanni_letizia.webp';
+import fotoDonJuanOrtiz from '@/public/images/foto_don_juan_ortiz.webp';
 import { StaticImageData } from 'next/image';
 
 export interface Member {
@@ -25,5 +26,10 @@ export const membersITA: Member[] = [
     name: 'Giovanni Letizia',
     imageSrc: fotoGiovanniLetizia,
     bio: '“Tutto quello di cui hai bisogno è già dentro di te, ora!” Con passione, supporto e seguo le persone sia nel loro percorso di crescita personale, sia nel migliorare la loro comunicazione interna ed esterna tramite corsi di formazione.',
+  },
+  {
+    name: 'Don Juan "Aguila" Ortiz De La Cruz',
+    imageSrc: fotoDonJuanOrtiz,
+    bio: 'Don Juan “Aguila” Ortiz de La Cruz è un marakame (“colui che canta e sogna”), sciamano tradizionale e leader spirituale del suo popolo: gli Wixárika, noti anche come Huicholes, del Messico.',
   }
 ];

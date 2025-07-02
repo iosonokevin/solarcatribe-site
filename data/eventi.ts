@@ -77,7 +77,7 @@ export const allEventsITA: EventData[] = [
     image: eventoCerimoniaHikuri,
     date: '21-22 settembre 2025',
     location1: 'Val Chiusella (TO)',
-    members: ['Luca Del Fuego Confortini'],
+    members: ['Don Juan "Aguila" Ortiz De La Cruz'],
     description1: `Don Juan “Aguila” Ortiz de La Cruz è un marakame (“colui che canta e sogna”), sciamano tradizionale e leader spirituale del suo popolo: gli Wixárika, noti anche come Huicholes, del Messico.`,
     description2: `Nato nella tradizione Wixárika e completamente dedicato a essa e all’umanità, guida antiche cerimonie intorno al Fuoco (nonno Tatewari), che rappresentano una parte centrale della sua magnifica cultura e della sua grande famiglia spirituale.`,
     description3: `I suoi canti ancestrali in lingua Wixárika raccontano storie sulla creazione dell’universo, onorano gli elementi naturali e tutte le divinità che fanno parte di questa straordinaria cosmogonia. Attraverso la loro vibrazione, questi canti invocano lo Spirito del Cervo Blu (Kauyumari) e attivano il potere dell’hikuri, la medicina sacra per tutti i cuori umani.`,
