@@ -5,6 +5,7 @@ import PageLoader from "@/components/common/PageLoader";
 import { LanguageProvider } from "@/components/layout/LanguageProvider";
 import 'vanilla-cookieconsent/dist/cookieconsent.css';
 import CookieConsentComponent from '@/components/layout/CookieConsent';
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -62,7 +63,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">   
+    <html lang="it">   
+      <Head>
+        <meta name="google-site-verification" content="sckk7qfY-xwGJCNThzrSRgrFXhWr2wedl0mR3oM9kW8" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
