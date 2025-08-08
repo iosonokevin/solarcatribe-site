@@ -2,7 +2,7 @@ import eventoMartinaMamani from '@/public/images/evento_martina_mamani.webp';
 import eventoVoiceOfFreedom from '@/public/images/evento_voice_of_freedom.webp';
 import tribeAroundFire from '@/public/images/tribe_around_fire.webp';
 import eventoCerimoniaHikuri from '@/public/images/evento_cerimonia_hikuri.webp';
-import eventoParoleNative from '@/public/images/evento_parole_native.webp';
+import eventoParoleNative from '@/public/images/telo_filo_rosso.webp';
 import { StaticImageData } from 'next/image';
 
 export interface EventData {
@@ -42,7 +42,7 @@ export const allEventsENG: EventData[] = [
     members: ['Luca Del Fuego Confortini', 'Samuele Zarantonello'],
     description1: `We will learn to sing in the ancestral language of the Lakota, and understand how singing can manifest in us through the opening of the heart and connection with the Great Spirit.`,
     description2: `Singing is a fundamental form of expression within the tribal structures of indigenous peoples. The voice is a vibration that evokes higher spirits; it is an instrument capable of creating and sustaining spiritual actions, making them manifest in the material world. It is the narration of ancestral stories, the sound that in ceremonies guides, supports, heals, and transforms.`,
-    active: true,
+    active: false,
     registration:'https://forms.gle/K1SxxJ6zPLxhNg9M6'
   },
   {
@@ -55,7 +55,7 @@ export const allEventsENG: EventData[] = [
     members: ['Luca Del Fuego Confortini'],
     description1: `The Ceremony is part of one of the 7 sacred rites of the Native American (Lakota Sioux) people. It represents rebirth through the archetype of the Mother.`,
     description2: `The lodge represents the womb of Mother Earth, fertilized by the stones (spermatozoa) heated by the masculine element, Fire — then brought inside the womb-lodge and activated with Water, the feminine element, so that the heat spreads inside the space and the songs and words are carried upwards as steam to the Great Spirit.`,
-    active: true,
+    active: false,
     registration:'https://forms.gle/6RN7HTiW7RYMeitg9'
   },
   {
@@ -68,7 +68,7 @@ export const allEventsENG: EventData[] = [
     members: ['Luca Del Fuego Confortini'],
     description1: `The Ceremony is part of one of the 7 sacred rites of the Native American (Lakota Sioux) people. It represents rebirth through the archetype of the Mother.`,
     description2: `The lodge represents the womb of Mother Earth, fertilized by the stones (spermatozoa) heated by the masculine element, Fire — then brought inside the womb-lodge and activated with Water, the feminine element, so that the heat spreads inside the space and the songs and words are carried upwards as steam to the Great Spirit.`,
-    active: true,
+    active: false,
     registration:'https://forms.gle/fsJa1E2Mi5uE3hoYA'
   },
   {

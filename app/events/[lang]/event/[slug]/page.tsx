@@ -6,7 +6,7 @@ import Footer from '@/components/common/Footer';
 import Hero from '@/components/common/HeroSection';
 import { membersITA } from '@/data/membri';
 import { membersENG } from '@/data/members';
-import EventMembersList from '@/components/common/EventMembersList';
+import EventMembersList from '@/components/common/MembersList';
 import { MapPin, Calendar } from 'lucide-react';
 import ButtonLink from '@/components/common/PrimaryButton';
 import ReactMarkdown from 'react-markdown';
@@ -24,9 +24,6 @@ function getMembersByLang(lang: 'ITA' | 'ENG') {
   return lang === 'ITA' ? membersITA : membersENG;
 }
 
-// (Opzionale) puoi rimuoverlo se non usi static export
-// export function generateStaticParams() { ... }
-
 export default async function EventPage({ params }: { params: Promise<Params> }) {
   const { lang, slug } = await params;
 
@@ -39,6 +36,13 @@ export default async function EventPage({ params }: { params: Promise<Params> })
   const eventMembers = members.filter(m => event.members.includes(m.name));
 
   const registerText = lang === 'ITA' ? 'ISCRIVITI QUI' : 'REGISTER HERE';
+
+  let title = '';
+  if(lang === 'ITA'){
+    title = members.length > 1 ? 'Conducono' : 'Conduce';
+  } else {
+    title = 'Hosted by';
+  }
 
   return (
     <div className="bg-white text-black">
@@ -61,7 +65,7 @@ export default async function EventPage({ params }: { params: Promise<Params> })
         </div>
       </section>
 
-      <EventMembersList members={eventMembers} />
+      <EventMembersList members={eventMembers} title={title}/>
 
       <section className="bg-white text-black max-w-6xl mx-auto px-6 py-16 sm:px-12 flex flex-col sm:flex-row justify-between items-center gap-6">
         <div className="sm:w-2/3">

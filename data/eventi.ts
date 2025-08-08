@@ -2,7 +2,7 @@ import eventoMartinaMamani from '@/public/images/evento_martina_mamani.webp';
 import eventoVoiceOfFreedom from '@/public/images/evento_voice_of_freedom.webp';
 import tribeAroundFire from '@/public/images/tribe_around_fire.webp';
 import eventoCerimoniaHikuri from '@/public/images/evento_cerimonia_hikuri.webp';
-import eventoParoleNative from '@/public/images/evento_parole_native.webp';
+import eventoParoleNative from '@/public/images/telo_filo_rosso.webp';
 import { StaticImageData } from 'next/image';
 
 export interface EventData {
@@ -42,7 +42,7 @@ export const allEventsITA: EventData[] = [
     members: ['Luca Del Fuego Confortini', 'Samuele Zarantonello'],
     description1: `Impareremo a cantare nella lingua ancestrale dei Lakota, e comprenderemo come il canto possa manifestarsi in noi attraverso l’apertura del cuore e la connessione con il Grande Spirito.`,
     description2: `Il canto è una forma fondamentale di espressione all’interno delle strutture tribali dei popoli indigeni. La voce è una vibrazione che evoca gli spiriti superiori; è uno strumento capace di creare e sostenere azioni spirituali, rendendole manifeste nel mondo materiale. È la narrazione di storie ancestrali, il suono che nelle cerimonie guida, supporta, cura e trasforma.`,
-    active: true,
+    active: false,
     registration:'https://forms.gle/K1SxxJ6zPLxhNg9M6'
   },
   {
@@ -55,7 +55,7 @@ export const allEventsITA: EventData[] = [
     members: ['Luca Del Fuego Confortini'],
     description1: `La Cerimonia fa parte di uno dei 7 riti sacri degli Indiani Americani (Nativi Americani) Lakota Sioux. Rappresenta la rinascita attraverso l'archetipo della Madre.`,
     description2: `La capanna rappresenta l'utero di Madre Terra che viene fecondato dalle pietre (spermatozoi) scaldate dall'elemento maschile, il Fuoco - per poi essere portato all'interno dell'utero-capanna e con l'Acqua, l'elemento femminile, attivate affinchè il calore si espanda all'intenro dello spazio e i canti e le parole vengano portate in alto sotto forma di vapore al Grande Spirito.`,
-    active: true,
+    active: false,
     registration:'https://forms.gle/6RN7HTiW7RYMeitg9'
   },
   {
@@ -68,7 +68,7 @@ export const allEventsITA: EventData[] = [
     members: ['Luca Del Fuego Confortini'],
     description1: `La Cerimonia fa parte di uno dei 7 riti sacri degli Indiani Americani (Nativi Americani) Lakota Sioux. Rappresenta la rinascita attraverso l'archetipo della Madre.`,
     description2: `La capanna rappresenta l'utero di Madre Terra che viene fecondato dalle pietre (spermatozoi) scaldate dall'elemento maschile, il Fuoco - per poi essere portato all'interno dell'utero-capanna e con l'Acqua, l'elemento femminile, attivate affinchè il calore si espanda all'intenro dello spazio e i canti e le parole vengano portate in alto sotto forma di vapore al Grande Spirito.`,
-    active: true,
+    active: false,
     registration:'https://forms.gle/fsJa1E2Mi5uE3hoYA'
   },
   {

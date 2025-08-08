@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "cammino interiore",
   ],
   verification: {
-    google: "sckk7qfY-xwGJCNThzrSRgrFXhWr2wedl0mR3oM9kW8s",
+    google: "sckk7qfY-xwGJCNThzrSRgrFXhWr2wedl0mR3oM9kW8",
   },
   openGraph: {
     title: "Solarca Tribe – Red Path",

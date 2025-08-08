@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import MemberCard from './MemberCard';
 import MemberOverlay from './MemberOverlay';
-import { useLanguage } from '@/components/layout/LanguageProvider';
 import { StaticImageData } from 'next/image';
 
 interface Member {
@@ -14,22 +13,15 @@ interface Member {
 
 interface Props {
   members: Member[];
+  title?: string;
 }
 
-export default function EventMembersList({ members }: Props) {
-  const { language } = useLanguage();
+export default function MembersList({ members, title }: Props) {
   const [selectedMember, setSelectedMember] = useState<Member | null>(null);
-
-  let heading = '';
-  if (language === 'ITA') {
-    heading = members.length > 1 ? 'Conducono' : 'Conduce';
-  } else {
-    heading = 'Hosted by';
-  }
 
   return (
     <section className="bg-white text-black py-20 px-6 sm:px-12">
-      <h2 className="text-3xl font-bold text-center mb-12">{heading}</h2>
+      <h2 className="text-3xl font-bold text-center mb-12">{title}</h2>
 
       <div className="flex flex-wrap justify-center gap-10 max-w-6xl mx-auto">
         {members.map((member) => (
