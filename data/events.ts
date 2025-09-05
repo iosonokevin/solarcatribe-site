@@ -75,7 +75,7 @@ export const allEventsENG: EventData[] = [
     slug: 'cerimonia-hikuri',
     title: 'Hikuri Ceremony',
     image: eventoCerimoniaHikuri,
-    date: '21-22 September 2025',
+    date: '20-21 September 2025',
     location1: 'Val Chiusella (TO)',
     members: ['Don Juan "Aguila" Ortiz De La Cruz'],
     description1: `Don Juan “Aguila” Ortiz de La Cruz is a marakame (“he who sings and dreams”), traditional shaman and spiritual leader of his people: the Wixárika, also known as Huicholes, from Mexico.`,
