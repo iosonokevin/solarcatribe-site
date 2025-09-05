@@ -55,7 +55,7 @@ export default function PrivacyPolicy() {
                 <li>Diritti riguardanti decisioni automatizzate e profilazione</li>
               </ul>
               <p className="mb-4">
-                Per esercitare uno di questi diritti, contattaci via email: <a href="mailto:kevin.burrafato@gmail.com" className="underline">kevin.burrafato@gmail.com</a>.
+                Per esercitare uno di questi diritti, contattaci via email: <a href="mailto:solarcatribe@gmail.com" className="underline">solarcatribe@gmail.com</a>.
               </p>
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">Trasferimenti internazionali</h3>
@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">Contatti</h3>
               <p className="mb-4">
-                Per qualsiasi informazione riguardante questa informativa o i tuoi diritti, scrivici a <a href="mailto:kevin.burrafato@gmail.com" className="underline">kevin.burrafato@gmail.com</a>.
+                Per qualsiasi informazione riguardante questa informativa o i tuoi diritti, scrivici a <a href="mailto:solarcatribe@gmail.com" className="underline">solarcatribe@gmail.com</a>.
               </p>
             </>
           ) : (
@@ -130,7 +130,7 @@ export default function PrivacyPolicy() {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">Contact information</h3>
               <p className="mb-4">
-                If you would like to contact us to understand more about this Policy... email us at <a href="mailto:kevin.burrafato@gmail.com" className="underline">kevin.burrafato@gmail.com</a>.
+                If you would like to contact us to understand more about this Policy... email us at <a href="mailto:solarcatribe@gmail.com" className="underline">solarcatribe@gmail.com</a>.
               </p>
             </>
           )}
