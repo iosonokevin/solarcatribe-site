@@ -89,6 +89,7 @@ export const allEventsITA: EventData[] = [
     title: 'Parole Native',
     image: eventoParoleNative,
     date: '18-19 ottobre 2025',
+    location1: 'Sala Kobain - Via Zannoni 29 - Bologna (BO)',
     members: ['Luca Del Fuego Confortini', 'Giovanni Letizia'],
     description1: `Con questo workshop hai l’opportunità di fare un salto evolutivo grazie a **PAROLE NATIVE**, un’esperienza unica che unisce l’antica saggezza dei Nativi Americani con la potenza della PNL (Programmazione Neuro-Linguistica).`,
     description2: `- Scopri il potere delle tradizioni millenarie.\n- Riprogramma la tua mente per l’evoluzione e il successo.\n- Attiva le tue risorse interiori e il tuo potenziale umano.\n- Vivi un profondo senso di connessione e consapevolezza.`,
