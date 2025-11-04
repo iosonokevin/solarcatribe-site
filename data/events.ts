@@ -3,6 +3,9 @@ import eventoVoiceOfFreedom from '@/public/images/evento_voice_of_freedom.webp';
 import tribeAroundFire from '@/public/images/tribe_around_fire.webp';
 import eventoCerimoniaHikuri from '@/public/images/evento_cerimonia_hikuri.webp';
 import eventoParoleNative from '@/public/images/telo_filo_rosso.webp';
+import eventoPalermo from '@/public/images/evento_palermo.jpg';
+import eventoOttobre from '@/public/images/evento_ottobre.jpg';
+import eventoNovembre from '@/public/images/evento_novembre.jpg';
 import { StaticImageData } from 'next/image';
 
 export interface EventData {
@@ -88,13 +91,58 @@ export const allEventsENG: EventData[] = [
     slug: 'parole-native',
     title: 'Native Words',
     image: eventoParoleNative,
-    date: '18-19 October 2025',
+    date: 'TBD',
     location1: 'Sala Kobain - Via Zannoni 29 - Bologna (BO)',
     members: ['Luca Del Fuego Confortini', 'Giovanni Letizia'],
     description1: `With this workshop, you have the opportunity to take an evolutionary leap thanks to **NATIVE WORDS**, a unique experience that combines the ancient wisdom of Native Americans with the power of NLP (Neuro-Linguistic Programming).`,
     description2: `- Discover the power of millennia-old traditions.\n- Reprogram your mind for evolution and success.\n- Activate your inner resources and human potential.\n- Experience a deep sense of connection and awareness.`,
     active: true,
     registration:'https://forms.gle/TE2YmaFqBjEYys1aA'
+  },
+  {
+    slug: 'evento-palermo',
+    title: 'Palermo Comic Convention',
+    image: eventoPalermo,
+    date: '11-14 settembre 2025',
+    location1: 'Palermo',
+    members: ['Luca Del Fuego Confortini'],
+    description1: `Luca Del Fuego Confortini ha tenuto due conferenze + un podcast per la Palermo Comic Convention 2025.`,
+    active: true,
+    registration:''
+  },
+  {
+    slug: 'evento-ottobre',
+    title: 'Rituale del Samhain',
+    image: eventoOttobre,
+    date: '1 novembre 2025',
+    location1: 'Val Chiusella (TO)',
+    members: ['Luca Del Fuego Confortini'],
+    description1: `Nelle civiltà celtiche, Samhain è una festa periodica che simboleggia la fine della stagione del raccolto. Rappresenta anche l’inizio della “metà oscura” dell’anno, il giorno in cui il confine tra il mondo e l'”Altro Mondo” è più permeabile. La festa era un momento di contemplazione. Per i Celti morire con onore, vivere nella memoria della tribù ed essere ricordati nella grande festa che si sarebbe svolta la vigilia di Samhain era una cosa molto importante. Questo era il periodo più magico dell'anno: il giorno che non esisteva. Durante la notte il grande scudo di Scáthach veniva abbassato, eliminando le barriere fra i mondi e permettendo alle forze del caos di invadere i reami dell'ordine e al mondo dei morti di entrare in contatto con quello dei vivi. I morti avrebbero potuto ritornare nei luoghi che frequentavano mentre erano in vita, e celebrazioni gioiose erano tenute in loro onore. Da questo punto di vista le tribù erano un tutt'uno col loro passato e il loro futuro.`,
+    active: true,
+    registration:''
+  },
+  {
+    slug: 'evento-novembre',
+    title: 'Creatività e Spiritualità',
+    image: eventoNovembre,
+    date: '7 novembre 2025',
+    location1: 'ore 21 Sala Napoleonica - Ville Ponti - Varese',
+    members: ['Luca Del Fuego Confortini'],
+    description1: `Hagam incontra Luca Confortini e Maccio Capatonda.`,
+    active: true,
+    registration:''
+  },
+  {
+    slug: 'capanna-sudatoria-15-novembre',
+    title: 'INIPI Capanna Sudatoria Lakota',
+    image: tribeAroundFire,
+    date: '15-16 novembre 2025',
+    location1: 'Val Chiusella (TO)',
+    members: ['Luca Del Fuego Confortini'],
+    description1: `La Cerimonia fa parte di uno dei 7 riti sacri degli Indiani Americani (Nativi Americani) Lakota Sioux. Rappresenta la rinascita attraverso l'archetipo della Madre.`,
+    description2: `La capanna rappresenta l'utero di Madre Terra che viene fecondato dalle pietre (spermatozoi) scaldate dall'elemento maschile, il Fuoco - per poi essere portato all'interno dell'utero-capanna e con l'Acqua, l'elemento femminile, attivate affinchè il calore si espanda all'intenro dello spazio e i canti e le parole vengano portate in alto sotto forma di vapore al Grande Spirito.`,
+    active: true,
+    registration:''
   },
 ];
 

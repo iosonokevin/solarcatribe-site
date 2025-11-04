@@ -3,6 +3,12 @@ import eventoVoiceOfFreedom from '@/public/images/evento_voice_of_freedom.webp';
 import tribeAroundFire from '@/public/images/tribe_around_fire.webp';
 import eventoCerimoniaHikuri from '@/public/images/evento_cerimonia_hikuri.webp';
 import eventoParoleNative from '@/public/images/telo_filo_rosso.webp';
+
+import eventoPalermo from '@/public/images/evento_palermo.jpg';
+import eventoOttobre from '@/public/images/evento_ottobre.jpg';
+import eventoNovembre from '@/public/images/evento_novembre.jpg';
+import eventoCapanna from '@/public/images/evento_capanna.jpg';
+
 import { StaticImageData } from 'next/image';
 
 export interface EventData {
@@ -81,20 +87,65 @@ export const allEventsITA: EventData[] = [
     description1: `Don Juan “Aguila” Ortiz de La Cruz è un marakame (“colui che canta e sogna”), sciamano tradizionale e leader spirituale del suo popolo: gli Wixárika, noti anche come Huicholes, del Messico.`,
     description2: `Nato nella tradizione Wixárika e completamente dedicato a essa e all’umanità, guida antiche cerimonie intorno al Fuoco (nonno Tatewari), che rappresentano una parte centrale della sua magnifica cultura e della sua grande famiglia spirituale.`,
     description3: `I suoi canti ancestrali in lingua Wixárika raccontano storie sulla creazione dell’universo, onorano gli elementi naturali e tutte le divinità che fanno parte di questa straordinaria cosmogonia. Attraverso la loro vibrazione, questi canti invocano lo Spirito del Cervo Blu (Kauyumari) e attivano il potere dell’hikuri, la medicina sacra per tutti i cuori umani.`,
-    active: true,
+    active: false,
     registration:'https://forms.gle/BUbxo89YopufmyXw5'
   },
   {
     slug: 'parole-native',
     title: 'Parole Native',
     image: eventoParoleNative,
-    date: '18-19 ottobre 2025',
+    date: 'TBD',
     location1: 'Sala Kobain - Via Zannoni 29 - Bologna (BO)',
     members: ['Luca Del Fuego Confortini', 'Giovanni Letizia'],
     description1: `Con questo workshop hai l’opportunità di fare un salto evolutivo grazie a **PAROLE NATIVE**, un’esperienza unica che unisce l’antica saggezza dei Nativi Americani con la potenza della PNL (Programmazione Neuro-Linguistica).`,
     description2: `- Scopri il potere delle tradizioni millenarie.\n- Riprogramma la tua mente per l’evoluzione e il successo.\n- Attiva le tue risorse interiori e il tuo potenziale umano.\n- Vivi un profondo senso di connessione e consapevolezza.`,
     active: true,
     registration:'https://forms.gle/TE2YmaFqBjEYys1aA'
+  },
+  {
+    slug: 'evento-palermo',
+    title: 'Palermo Comic Convention',
+    image: eventoPalermo,
+    date: '11-14 settembre 2025',
+    location1: 'Palermo',
+    members: ['Luca Del Fuego Confortini'],
+    description1: `Luca Del Fuego Confortini ha tenuto due conferenze + un podcast per la Palermo Comic Convention 2025.`,
+    active: true,
+    registration:''
+  },
+  {
+    slug: 'evento-ottobre',
+    title: 'Rituale del Samhain',
+    image: eventoOttobre,
+    date: '1 novembre 2025',
+    location1: 'Val Chiusella (TO)',
+    members: ['Luca Del Fuego Confortini'],
+    description1: `Nelle civiltà celtiche, Samhain è una festa periodica che simboleggia la fine della stagione del raccolto. Rappresenta anche l’inizio della “metà oscura” dell’anno, il giorno in cui il confine tra il mondo e l'”Altro Mondo” è più permeabile. La festa era un momento di contemplazione. Per i Celti morire con onore, vivere nella memoria della tribù ed essere ricordati nella grande festa che si sarebbe svolta la vigilia di Samhain era una cosa molto importante. Questo era il periodo più magico dell'anno: il giorno che non esisteva. Durante la notte il grande scudo di Scáthach veniva abbassato, eliminando le barriere fra i mondi e permettendo alle forze del caos di invadere i reami dell'ordine e al mondo dei morti di entrare in contatto con quello dei vivi. I morti avrebbero potuto ritornare nei luoghi che frequentavano mentre erano in vita, e celebrazioni gioiose erano tenute in loro onore. Da questo punto di vista le tribù erano un tutt'uno col loro passato e il loro futuro.`,
+    active: true,
+    registration:''
+  },
+  {
+    slug: 'evento-novembre',
+    title: 'Creatività e Spiritualità',
+    image: eventoNovembre,
+    date: '7 novembre 2025',
+    location1: 'ore 21 Sala Napoleonica - Ville Ponti - Varese',
+    members: ['Luca Del Fuego Confortini'],
+    description1: `Hagam incontra Luca Confortini e Maccio Capatonda.`,
+    active: true,
+    registration:''
+  },
+  {
+    slug: 'capanna-sudatoria-15-novembre',
+    title: 'INIPI Capanna Sudatoria Lakota',
+    image: eventoCapanna,
+    date: '15-16 novembre 2025',
+    location1: 'Val Chiusella (TO)',
+    members: ['Luca Del Fuego Confortini'],
+    description1: `Chi percorre la Via Sciamanica osserva partecipando in ogni forma. La partecipazione è l’atto richiesto dal Grande Spirito per restare sul cammino del cuore. La saggezza sta nelle parole, l’esempio sta nell’azione, la guarigione evolutiva sta nella pratica cerimoniale. Lo Spirito muove la materia che lo contiene e realizza la manifestazione che essa proietta`,
+    description2: `UNISCITI A NOI per esprimere nella forza del RITO l’unicità e la bellezza di ognuno nella creazione del Tutto.`,
+    active: true,
+    registration:''
   },
 ];
 
