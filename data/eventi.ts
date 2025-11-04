@@ -8,6 +8,7 @@ import eventoPalermo from '@/public/images/evento_palermo.jpg';
 import eventoOttobre from '@/public/images/evento_ottobre.jpg';
 import eventoNovembre from '@/public/images/evento_novembre.jpg';
 import eventoCapanna from '@/public/images/evento_capanna.jpg';
+import eventoOriente from '@/public/images/evento_oriente.jpg';
 
 import { StaticImageData } from 'next/image';
 
@@ -144,6 +145,17 @@ export const allEventsITA: EventData[] = [
     members: ['Luca Del Fuego Confortini'],
     description1: `Chi percorre la Via Sciamanica osserva partecipando in ogni forma. La partecipazione è l’atto richiesto dal Grande Spirito per restare sul cammino del cuore. La saggezza sta nelle parole, l’esempio sta nell’azione, la guarigione evolutiva sta nella pratica cerimoniale. Lo Spirito muove la materia che lo contiene e realizza la manifestazione che essa proietta`,
     description2: `UNISCITI A NOI per esprimere nella forza del RITO l’unicità e la bellezza di ognuno nella creazione del Tutto.`,
+    active: true,
+    registration:''
+  },
+  {
+    slug: 'evento_oriente',
+    title: 'Oriente Day - Festival di Mente Corpo e Spirito',
+    image: eventoOriente,
+    date: '22-23 novembre 2025',
+    location1: 'Spazio Fase- Bergamo - Alzano Lombardo',
+    members: ['Luca Del Fuego Confortini'],
+    description1: `CONFERENZE, LIBRI E MOMENTI ISPIRAZIONE. Esperti, scrittori, Maestri, studiosi e ospiti speciali portano le loro ricerche, presentano le loro pratiche e raccontano il mondo dell'Oriente in tutte le sue sfumature. Scopri il programma e preparati a lasciarti stupire e guidare tra libri e letture, meditazioni, sciamanesimo, naturopatia, spunti di riflessione e momenti di scoperta di nuove strade di consapevolezza.`,
     active: true,
     registration:''
   },
