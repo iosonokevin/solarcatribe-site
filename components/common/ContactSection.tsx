@@ -25,33 +25,37 @@ export default function ContactSection() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSending(true);
-    setResponseMessage(null);
+  e.preventDefault();
+  setIsSending(true);
+  setResponseMessage(null);
 
-    try {
-      const res = await fetch('/api/send', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formState),
-      });
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: '4d09b0bd-c057-468e-95de-6c6132beba6e',
+        name: formState.name,
+        email: formState.email,
+        message: formState.message,
+      }),
+    });
 
-      const result = await res.json();
+    const result = await res.json();
 
-      if (res.ok) {
-        setResponseMessage(language === 'ITA' ? 'Messaggio inviato!' : 'Message sent!');
-        setFormState({ name: '', email: '', message: '' });
-      } else {
-        setResponseMessage(language === 'ITA' ? 'Errore nell\'invio.' : 'Sending failed.');
-        console.error(result.error);
-      }
-    } catch (err) {
-      console.error(err);
-      setResponseMessage(language === 'ITA' ? 'Errore interno.' : 'Internal error.');
-    } finally {
-      setIsSending(false);
+    if (result.success) {
+      setResponseMessage(language === 'ITA' ? 'Messaggio inviato!' : 'Message sent!');
+      setFormState({ name: '', email: '', message: '' });
+    } else {
+      setResponseMessage(language === 'ITA' ? 'Errore nell\'invio.' : 'Sending failed.');
     }
-  };
+  } catch (err) {
+    console.error(err);
+    setResponseMessage(language === 'ITA' ? 'Errore interno.' : 'Internal error.');
+  } finally {
+    setIsSending(false);
+  }
+};
 
   return (
     <section className="bg-white text-black py-20 px-6 sm:px-12">

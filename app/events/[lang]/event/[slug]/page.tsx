@@ -16,6 +16,13 @@ type Params = {
   slug: string;
 };
 
+export async function generateStaticParams() {
+  const itaSlugs = allEventsITA.map(e => ({ lang: 'ITA', slug: e.slug }));
+  const engSlugs = allEventsENG.map(e => ({ lang: 'ENG', slug: e.slug }));
+  return [...itaSlugs, ...engSlugs];
+}
+
+
 function getEventsByLang(lang: 'ITA' | 'ENG') {
   return lang === 'ITA' ? allEventsITA : allEventsENG;
 }

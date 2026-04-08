@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <div className="bg-transparent text-white font-[family-name:var(--font-geist-sans)] relative">       
-      <Hero title="Solarca Tribe" videoSrc="/santa_sara_tribe_canto_2.mp4" />
+      <Hero title="Solarca Tribe" videoSrc="https://pub-1660499ef7f94a9dbdfae1ab618b6ded.r2.dev/video/santa_sara_tribe_canto_2.mp4" />
 
       <EventList />
 
